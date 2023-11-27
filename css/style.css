@@ -10,10 +10,24 @@ section, header {
     margin: auto;
 }
 
+/*--- Styling Images ---*/
+
 img {
     display: block;
     padding: 0;
     max-width: 100%;
+}
+
+.topimg {
+    margin-bottom: 4rem;
+}
+
+.imgsmall {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 }
 
 /*--- Styling Typography ---*/
@@ -62,6 +76,24 @@ header p {
     margin-bottom: 8rem;
 }
 
+.dropcap {
+    font-family: Merriweather, serif;
+    float: left;
+    line-height: 100%;
+    width: 0.7em;
+    font-size: 300%;
+    color: #9C6523;
+}
+
+.dark .dropcap {
+    color: #f7f7f7;
+    width: 0.8em;
+}
+
+.jessica .dropcap {
+    width: 0.5em;
+}
+
 /*--- Styling Links ---*/
 a {
     color: #9C6523;
@@ -71,6 +103,21 @@ a {
 a:hover {
     color: #412707;
     border-bottom: 1px dotted;
+}
+
+.dark {
+    background-color: #9C6523;
+    color: #f7f7f7;
+    padding: 6rem 0;
+}
+
+.list {
+    line-height: 1.5;
+}
+
+.list li {
+    margin-bottom: 1rem;
+    list-style-type: none;
 }
 
 /*--- Styling Nav ---*/
@@ -112,6 +159,7 @@ nav a:hover {
     padding-right: 50vw;
 }
 
+/*--- Styling Footer ---*/
 footer {
     background: #9C6523;
     text-align: center;
@@ -123,4 +171,66 @@ footer {
 
 footer p {
     margin: 0 16rem;
+}
+
+.connections{
+    position: relative;
+    margin: 0 auto;}
+.connections ul{
+    margin: 0;
+    padding: 0;}
+.connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;  }
+.connections a:link{
+        border-bottom: none;       }
+.connections img, .connections svg{
+    border: none;}
+.connections a:hover img, .connections a:hover svg{
+    border-bottom: none;}
+.connections svg {
+    margin: 2rem auto;}
+.connections a:hover svg path {
+    fill: #333;
+    transition: all 0.2s ease-in-out;}
+footer .connections a:hover svg path {
+    fill:  #C2C2C2;
+    transition: all 0.2s ease-in-out;}
+
+/*--- Adding Media Queries for different devices ---*/
+
+@media (max-width: 768px) {
+    section, header {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 412px) {
+    section, header {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
 }
