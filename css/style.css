@@ -50,6 +50,7 @@ h1 {
 h2 {
     font-size: 2.25rem;
     margin: 3rem 0 1rem 0;
+    color: #9C6523;
 }
 
 blockquote {
@@ -62,7 +63,6 @@ blockquote {
 
 cite {
     font-size: 1rem;
-    color: #777;
 }
 
 header h2 {
@@ -101,7 +101,7 @@ a {
 }
 
 a:hover {
-    color: #412707;
+    color: #4d2e07;
     border-bottom: 1px dotted;
 }
 
@@ -109,6 +109,10 @@ a:hover {
     background-color: #9C6523;
     color: #f7f7f7;
     padding: 6rem 0;
+}
+
+.dark h2 {
+    color: #f7f7f7;
 }
 
 .list {
@@ -156,7 +160,7 @@ nav a:hover {
 .logo {
     font-size: 1.8rem;
     text-align: left;
-    padding-right: 50vw;
+    padding-right: 20vw;
 }
 
 /*--- Styling Footer ---*/
